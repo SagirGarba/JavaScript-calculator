@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src='jquery-3.4.1.js'></script>  
+       <script type="text/javascript" src='calculate.js'></script> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       <link rel="stylesheet" href="calculate.css"> 
+        <title>Sagir Calculator</title>
+    </head>
+    <body>
+
+      <div class="container-fluid">
+        <div class="row">
+
+          <!--Calculator heading-->
+          <div class="bottom-pad text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+            <h1 class="headingTextOne">Fasaha Calculator Project</h1>
+            <h2 class="headingTextTwo">By Sagir Garba Isa</h2>
+          </div> <!--Calculator heading-->
+
+          <!--Calculator body-->
+            <div class="numberText rounded-corners col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4 col-lg-2 col-lg-offset-5" id="calcBody">
+              
+              <!--calculator result-->
+              <div class="text-right rounded-corners col-xs-12 col-xs-offset-0 col-md-12 col-md-offset-0" id="display">
+                <span id="calcEntry">0</span>
+                <span id="calcHistory">NO RESULT</span>
+              </div><!--calculator result-->
+              
+              <!--calculator buttons-->
+              <!-- C, CE, BS, / -->
+              <div class="row col-xs-12 col-md-12 calc-button-row">
+              <div class="calc-button-holder col-xs-3 col-md-3"><button class="rounded-corners calc-button"><a  id="clear"><h4>C</h4></a></button></div>
+              <div class="calc-button-holder col-xs-3 col-md-3"><button class="rounded-corners calc-button"><a id="clearEntry"><h4>CE</h4></a></button></div>
+              <div class="calc-button-holder col-xs-3 col-md-3"><button class="rounded-corners calc-button"><a id="backspace"><h4>BS</h4></a></button></div>
+              <div class="calc-button-holder col-xs-3 col-md-3"><button class="rounded-corners calc-button"><a id="divide"><h4>/</h4></a></button></div>
+              </div>
+
+              <!-- 7, 8, 9, * -->
+      <div class="row col-xs-12 col-md-12 calc-button-row">
+          <div class="calc-button-holder col-xs-3 col-md-3"><button class="rounded-corners calc-button"><a id="seven"><h4>7</h4></a></button></div>
+          <div class="calc-button-holder col-xs-3 col-md-3"><button class="rounded-corners calc-button"><a id="eight"><h4>8</h4></a></button></div>
+          <div class="calc-button-holder col-xs-3 col-md-3"><button class="rounded-corners calc-button"><a id="nine"><h4>9</h4></a></button></div>
+          <div class="calc-button-holder col-xs-3 col-md-3"><button class="rounded-corners calc-button"><a id="multiply"><h4>*</h4></a></button></div>
+        </div>
+        <!-- 4, 5, 6, - -->
+        <div class="row col-xs-12 col-md-12 calc-button-row">
+          <div class="calc-button-holder col-xs-3 col-md-3"><button class="rounded-corners calc-button"><a id="four"><h4>4</h4></a></button></div>
+          <div class="calc-button-holder col-xs-3 col-md-3"><button class="rounded-corners calc-button"><a id="five"><h4>5</h4></a></button></div>
+          <div class="calc-button-holder col-xs-3 col-md-3"><button class="rounded-corners calc-button"><a id="six"><h4>6</h4></a></button></div>
+          <div class="calc-button-holder col-xs-3 col-md-3"><button class="rounded-corners calc-button"><a id="subtract"><h4>-</h4></a></button></div>
+        </div>
+        <!-- 1, 2, 3, + -->
+        <div class="row col-xs-12 col-md-12 calc-button-row">
+          <div class="calc-button-holder col-xs-3 col-md-3"><button class="rounded-corners calc-button"><a id="one"><h4>1</h4></a></button></div>
+          <div class="calc-button-holder col-xs-3 col-md-3"><button class="rounded-corners calc-button"><a id="two"><h4>2</h4></a></button></div>
+          <div class="calc-button-holder col-xs-3 col-md-3"><button class="rounded-corners calc-button"><a id="three"><h4>3</h4></a></button></div>
+          <div class="calc-button-holder col-xs-3 col-md-3"><button class="rounded-corners calc-button"><a id="add"><h4>+</h4></a></button></div>
+        </div>
+        <!-- 0, . , =   -->
+        <div class="row col-xs-12 col-md-12 calc-button-row">
+          <div class="calc-button-holder col-xs-6 col-md-6"><button class="rounded-corners calc-button"><a id="zero"><h4>0</h4></a></button></div>
+          <div class="calc-button-holder col-xs-3 col-md-3"><button class="rounded-corners calc-button"><a id="decimal"><h4>.</h4></a></button></div>
+          <div class="calc-button-holder col-xs-3 col-md-3"><button class="rounded-corners calc-button"><a id="equals"><h4>=</h4></a></button></div>
+        </div>
+        <!-- calculator buttons -->
+          
+      </div> <!-- calculator body -->
+
+             <!-- tips -->
+    <div class="headingTextOne text-center col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
+        <h5 id="tipText"></h5>
+      </div> <!-- tips -->
+
+        </div>
+      </div> 
+    </body>
+</html>
